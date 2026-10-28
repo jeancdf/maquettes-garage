@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Rendez-vous — Garage Moreau (maquette Complet)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../kit/std.css">
+<style>:root{--pri:#22272E;--pri-2:#343B45;--acc:#8F6110;--btn:#C98A1B;--btn-2:#B57A12;--on-btn:#181C21;--soft:#F1F2F3;--ink:#181C21;--muted:#5A6068;--line:#E1E3E6;--radius:6px;--fd:'IBM Plex Sans Condensed';--fb:'IBM Plex Sans';--fdw:600}</style>
+</head>
+<body>
+<div class="topbar wrap"><span><b>Ouvert aujourd’hui</b> · 8 h – 12 h · 14 h – 18 h 30</span><span><span class="ph">[Adresse]</span>, <span class="ph">[Ville]</span> · <a href="tel:+33000000000"><span class="ph">[00 00 00 00 00]</span></a></span></div>
+<header class="hd wrap">
+  <a class="logo" href="index.html"><b>Garage Moreau</b><small>Mécanique toutes marques</small></a>
+  <nav aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="prestations.html">Tarifs</a><a href="realisations.html">L’atelier</a><a href="a-propos.html">L’équipe</a><a href="contact.html" class="on" aria-current="page">Rendez-vous</a></nav>
+  <div class="side"><a class="btn sm" href="contact.html#demande">Prendre rendez-vous</a><button class="burger" type="button" aria-label="Menu" aria-expanded="false"><i></i></button></div>
+</header>
+<nav class="mnav" aria-label="Menu mobile"><a href="index.html">Accueil</a><a href="prestations.html">Tarifs</a><a href="realisations.html">L’atelier</a><a href="a-propos.html">L’équipe</a><a href="contact.html" class="on" aria-current="page">Rendez-vous</a><a class="btn" href="contact.html#demande">Prendre rendez-vous</a></nav>
+
+<main>
+<section class="ph-head wrap"><div class="crumb"><a href="index.html">Accueil</a> / Rendez-vous</div>
+  <h1>Prendre rendez-vous</h1><p class="lede">Choisissez la prestation et le créneau de dépôt : nous vous rappelons avec le devis.</p></section>
+<section class="s wrap" style="padding-top:56px"><div class="contact">
+  <div><div class="eyebrow">Coordonnées</div>
+    <h3>Adresse</h3><p><span class="ph">[Adresse du garage]</span><br><span class="ph">[Code postal]</span> <span class="ph">[Ville]</span></p>
+    <h3>Horaires</h3><table class="hours"><tbody><tr><td>Lundi → vendredi</td><td>8 h – 12 h · 14 h – 18 h 30</td></tr><tr><td>Samedi</td><td>8 h – 12 h</td></tr><tr><td>Dimanche</td><td>Fermé</td></tr></tbody></table>
+    <h3>Nous joindre</h3><a class="cline" href="tel:+33000000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span class="ph">[00 00 00 00 00]</span></a><a class="cline" href="mailto:contact@nom-du-garage.fr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span class="ph">[contact@nom-du-garage.fr]</span></a><a class="cline" href="#" data-demo="Lien vers le compte Instagram à renseigner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg><span class="ph">[@compte-instagram]</span></a>
+    <h3>Accès</h3><p>Parking clients devant le garage. Boîte à clés pour les dépôts avant l’ouverture.</p></div>
+  <div id="demande" style="scroll-margin-top:110px"><form class="demo" novalidate>
+        <div class="f"><label for="nom">Nom et prénom</label><input id="nom" name="nom" type="text" required></div><div class="f"><label for="tel">Téléphone</label><input id="tel" name="tel" type="tel" required></div><div class="f full"><label for="email">E-mail</label><input id="email" name="email" type="email" required></div><div class="f"><label for="prestation">Prestation</label><select id="prestation" name="prestation"><option value="revision">Révision</option><option value="vidange">Vidange</option><option value="freins">Freins</option><option value="pneus">Pneus</option><option value="clim">Climatisation</option><option value="diag">Diagnostic</option><option value="autre">Autre</option></select></div><div class="f"><label for="date">Date de dépôt</label><input id="date" name="date" type="date" required></div><div class="f"><label for="depot">Heure de dépôt</label><select id="depot" name="depot"><option>8 h</option><option>8 h 30</option><option>9 h</option><option>13 h 30</option><option>14 h</option></select></div><div class="f"><label for="immat">Immatriculation</label><input id="immat" name="immat" type="text" placeholder="AA-123-AA"></div><div class="f"><label for="km">Kilométrage</label><input id="km" name="km" type="number" placeholder="environ" min="1" inputmode="numeric"></div><div class="f"><label for="pret">Véhicule de prêt</label><select id="pret" name="pret"><option>Non</option><option>Oui, si disponible</option></select></div><div class="f full"><label for="message">Votre demande</label><textarea id="message" name="message" placeholder="Bruit, voyant, modèle du véhicule…"></textarea></div>
+        <label class="consent full"><input type="checkbox" name="rgpd" required> J’accepte que mes informations soient utilisées pour répondre à ma demande.</label>
+        <button class="btn full" type="submit">Demander ce rendez-vous <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </form>
+      <div class="sent" role="status"><h3>Rendez-vous demandé</h3><p>Nous vous rappelons pour confirmer le créneau et le devis. Récapitulatif :</p><dl></dl>
+        <p class="small">Maquette de démonstration : aucune donnée n’est envoyée.</p><button class="btn line sm" type="button" data-reset>Faire une autre demande</button></div></div>
+</div></section>
+<section class="s soft wrap"><div class="two"><div><div class="eyebrow">Avant d’écrire</div><h2 class="t">Questions courantes</h2></div>
+  <div class="faq"><details><summary>Faut-il prendre rendez-vous ?</summary><p>Oui pour l’entretien et les réparations ; pour un voyant ou un bruit, appelez-nous, on vous prend rapidement.</p></details><details><summary>La révision chez vous préserve-t-elle la garantie ?</summary><p>Oui, nous suivons le carnet constructeur avec des pièces de qualité équivalente.</p></details><details><summary>Puis-je apporter mes pièces ?</summary><p>Pour les pneus oui. Pour les autres pièces, nous ne pouvons pas garantir la main-d’œuvre.</p></details><p style="margin-top:18px"><a class="link" href="prestations.html#faq">Toutes les questions →</a></p></div></div></section>
+</main>
+<footer class="ft wrap">
+  <div class="top">
+    <div><a class="logo" href="index.html"><b>Garage Moreau</b><small>Mécanique toutes marques</small></a><p style="margin-top:16px;max-width:290px">Garage indépendant, entretien et réparation toutes marques à <span class="ph">[Ville]</span>.</p></div>
+    <div><h4>Pages</h4><a class="l" href="index.html">Accueil</a><a class="l" href="prestations.html">Tarifs</a><a class="l" href="realisations.html">L’atelier</a><a class="l" href="a-propos.html">L’équipe</a><a class="l" href="contact.html">Rendez-vous</a></div>
+    <div><h4>Horaires</h4><span class="l">Lun → ven : 8 h – 18 h 30</span><span class="l">Samedi : 8 h – 12 h</span></div>
+    <div><h4>Contact</h4><span class="l"><span class="ph">[Adresse du garage]</span></span><a class="l" href="tel:+33000000000"><span class="ph">[00 00 00 00 00]</span></a><a class="l" href="mailto:contact@nom-du-garage.fr"><span class="ph">[contact@nom-du-garage.fr]</span></a></div>
+  </div>
+  <div class="bot"><span>© <span data-year></span> Garage Moreau · <a href="mentions-legales.html">Mentions légales</a> · <a href="mentions-legales.html#donnees">Données personnelles</a></span><span class="demo-note">Maquette — établissement fictif, informations illustratives · Réalisation : [votre nom]</span></div>
+</footer>
+<script src="../kit/std.js"></script>
+</body>
+</html>
